@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <aside class="left-side">
+            <div class="wrapper">
+                <img src="odin-lined.png" alt="">
+                <h1>ODIN</h1>
+            </div>
+            
+        </aside>
+        <aside class="right-side">
+            <div class="top">
+                <h2>This is not a real online service!
+                    You know you need something like this
+                    in your life to help you realize your
+                    deepest dreams. Sign up now to get started.
+                </h2>
+                <h2>You know you want to.</h2>
+            </div>
+            <div class="center">
+                <form class="Sign-Up">
+                    <legend>Let's do this!</legend>
+
+                    <div class="sign-up">
+                        <div class="column">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstname" name="firstname">
+                        </div>
+                        
+                        <div class="column">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname" name="lastname">
+                        </div>
+                    </div>
+
+                    <div class="sign-up">
+                        <div class="column">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                        </div>
+                        
+                        <div class="column">
+                            <label for="phonenumber">PHONE NUMBER</label>
+                            <input id="phonenumber" name="phonenumber" min="9" max="9">
+                        </div>
+                        
+                    </div>
+                        
+                    <div class="sign-up">
+                        <div class="column">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" minlength="3">
+                        </div>
+
+                        <div class="column">
+                            <label for="confirmpassword">CONFIRM PASSWORD</label>
+                            <input type="confirmpassword" id="confirmpassword" name="confirmpassword" min="3">
+                        </div>
+                    </div>
+                </form>    
+            </div>
+            <div class="form-row">
+                <button type="submit" class="btn-submit">Create Account</button>
+            </div>
+            <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+        </aside>
+    </main>
+</body>
+</html>
